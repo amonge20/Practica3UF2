@@ -1,0 +1,291 @@
+/*Pagina completa amb els següents parametres*/
+body {
+    font-family: 'Nunito', sans-serif;
+    max-width: fit-content;
+    overflow-x: hidden;
+}
+/*La etiqueta <p> tindra un padding del 1%*/
+p {
+    padding: 1%;
+}
+/*La part d'adalt de la pagina web es mantindra amb un sticky quan moguem cap avall*/
+header {
+    background-color: black;
+    position: sticky;
+    width: 100%;
+    height: 6%;
+    margin: 0%;
+    top: 0;
+    z-index: 1;
+}
+/*El botó del head*/
+button {
+    all:unset;
+    margin: 21px;
+}
+/*La class en l'etiqueta <button>*/
+.but {
+    float: right;
+}
+/*Quan seleccionem els apartats de Nosaltres, Carta, Galeria en el boto*/
+.but:hover, a:focus {
+    background-size: 100% 2px;
+}
+/*L'etiqueta href dels apartats del buttton*/
+.enllaç {
+    color: white;
+    text-decoration: none;
+    background-size: 0% 2px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s;
+}
+/*El tamany de la primera imatge de la pagina web aixi per adaptar del navegador*/
+.sizeweb{
+    width: 100%;
+}
+/*Tamany de la imatge en la pagina web*/
+.headimage {
+    max-width: 100%;
+    min-width: 1200px;
+    margin-top: -8px;
+}
+/*El primer text que es fica a sobre de la primera imatge*/
+.inside {
+    color: white;
+    position: absolute;
+    font-weight: lighter;
+    top: 30%;
+    left: 21%;
+    font-size: 200%;
+    z-index: 0;
+}
+/*En l'etiqueta <span> aumentem el text i ho adaptem amb el inside1*/
+span {
+    font-weight: 1000;
+    color: white;
+}
+/*El segon text adaptan amb el inside*/
+.inside1 {
+    color: white;
+    position: absolute;
+    top: 36%;
+    left: 21%;
+    padding-top: 1%;
+    font-size: 125%;
+}
+/*Section id nosa ajustant el section amb l'adaptació de la pagina web*/
+#nosa{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+/*Section id nosa ajustant el section amb l'adaptació de la pagina web*/
+#nosa2{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 8%;
+}
+/*Fiquem a l'esquerra l'imatge*/
+.left {
+    width: 20%;
+    border-radius: 8px;
+    margin-right: 3%;
+    float: left;
+}
+/*Es fica el text al costat de l'imatge*/
+.lfloat {
+    padding-left: 5px;
+    margin-top: 3%;
+    margin-left: -10px;
+    margin-right: 5px;
+    right: 15%;
+    line-height: 1.4;
+}
+/*Fiquem a la dreta l'imatge*/
+.right {
+    width: 20%;
+    border-radius: 8px;
+    margin-top: -4%;
+    margin-right: 3%;
+    float: right;
+}
+/*Es fica el text al costat de l'imatge*/
+.rfloat{
+    padding-right: 5px;
+    margin-top: 3%;
+    margin-right: -10px;
+    margin-left: 6px;
+    left: 22%;
+    line-height: 1.4;
+}
+/*Section id contenidor li fem un grid*/
+#contenidor {
+    display: grid;
+    gap: 30px;
+    margin-top: 80px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/*Ajustem la classe card*/
+.card {
+    font-size: 150%;
+    grid-column: 1;
+    grid-row: 1;
+}
+/*Fiquem una capsa al menu*/
+.boxmenu {
+    color: white;
+    text-align: center;
+    line-height: 29px;
+    background-color: rgb(5, 5, 95);
+    border-radius: 2px;
+    width: 97.5%;
+    height: 45px;
+    margin: 0%;
+    padding-top: 12px;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+/*Estructura del grid amb les següents classes desde el ajusta fins a les imatges1 i 2*/
+.ajusta {
+    border: rgb(162, 162, 233) 1px solid;
+    text-align: center;
+    font-weight: bold;
+    line-height: 22em;
+    width: 180%;
+    height: 101%;
+    margin-top: -10%;
+    grid-column: 1;
+    grid-row: 3/4;
+}
+/*Es posa en el centre i dreta del grid*/
+.contingut {
+    margin-top: -2%;
+    margin-left: 3%;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+/*Acompanyara al contingut del grid*/
+.ajustap {
+    margin-top: -2%;
+    margin-left: -10px;
+    margin-right: 1%;
+    line-height: 1.3;
+    grid-column: 1;
+    grid-row: 3/4;
+}
+/*Li fiquem grid a les imatges 1 i 2*/
+.imagesmenu {
+    display: grid;
+}
+/*Acompanyat del grid del div imagesmenu*/
+.imgmenu1{
+    width: 95%;
+    margin-left: 0%;
+    grid-column: 1;
+    grid-row: 1;
+}
+/*Acompanyat del grid del div imagesmenu1*/
+.imgmenu2 {
+    width: 95%;
+    grid-column: 2;
+    grid-row: 1;
+}
+/*No es mostrara el text de la imatge del grid*/
+.imgtext {
+    display: none;
+}
+/*Estructura del grid amb les següents classes desde el contingut2 fins a les imatges3 i 4*/
+.contingut2 {
+    margin-top: -2%;
+    margin-left: 3%;
+    grid-column: 2/4;
+    grid-row: 4;
+}
+/*Acompanyara al contingut del grid*/
+.ajusta2 {
+    border: rgb(162, 162, 233) 1px solid;
+    text-align: center;
+    line-height: 22em;
+    width: 180%;
+    height: 102%;
+    margin-top: -15%;
+    grid-column: 1;
+    grid-row: 4/4;
+}
+/*Acompanyat del grid del div imagesmenu2*/
+.imgmenu3 {
+    width: 95%;
+    grid-column: 1;
+    grid-row: 1;
+}
+/*Acompanyat del grid del div imagesmenu2*/
+.imgmenu4 {
+    width: 95%;
+    grid-column: 2;
+    grid-row: 1;
+}
+/*Section id gallery ajustant el section amb l'adaptació de la pagina web*/
+#gallery {
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/*Fican un flex en la div class*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+/*Les imatges que corresponen en aquesta class, es faran més fosces que les altres*/
+.sombra {
+    width: 23%;
+    margin-top: 10px;
+    margin-right: 10px;
+    filter: brightness(50%);
+}
+/*Al seleccionar la class sombra, es fara més fosc*/
+.sombra:hover {
+    border: black 2px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    filter: brightness(30%);
+}
+/*Les imatges que corresponen en aquesta class, es faran més clares que les altres*/
+.brillo {
+    width: 23%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+/*Al seleccionar la class sombra, es fara fosc*/
+.brillo:hover {
+    border: black 2px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    filter: brightness(70%);
+}
+/*Ajustem l'estructura del footer*/
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+/*Adaptem el tamany de les 2 imatges*/
+.imgfinal {
+    width: 18px;
+    height: 20px;
+    margin-top: 32px;
+    margin-left: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+/*Ajustem el text d'aquesta classe*/
+.restfoot {
+    margin-left: 60%;
+}

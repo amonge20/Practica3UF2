@@ -1,0 +1,268 @@
+/*Resolucio de la Tablet amb 768px amb media query*/
+@media only screen and (max-width: 768px) {
+    /*En el body fiquem el tipus de lletra i ficarli el tamany maxím per no fer apareixer el scroll horinzontal*/
+    body {
+        font-family: 'Nunito', sans-serif;
+        max-width: fit-content;
+    }
+    /*Les etiquetes que tenen h1 doncs que es augmenti el tamany del text*/
+    h1 {
+        font-size: 250%;
+    }
+    /*Les etiquetes que tenen h2 doncs li ficarem un tamany exacte del text*/
+    h2 {
+        font-size: 35px;
+    }
+    /*Les etiquetes que tenen h3 doncs que es augmenti el tamany del text*/
+    h3 {
+        font-size: 175%;
+    }
+    /*Començament de la pagina*/
+    /*Li cambien el color de fons del header es manté en sticky i li cambien els margins dela pagina*/
+    header {
+        background-color: white;
+        position: sticky;
+        width: 102%;
+        height: 6%;
+        margin: 0%;
+        margin-left: -6px;
+        top: 0;
+        z-index: 1;
+    }
+    /*Li fiquem un section id per cambiar la direccio de les columnes com el ordre de l'adaptació del ordinador*/
+    #inversa {
+        display: flex;
+        flex-direction: row-reverse;
+        float: left;
+    }
+    /*Quan cliquem el boto es mante el mateix color*/
+    .enllaç {
+        color: black;
+        text-decoration: none;
+        background-size: 0% 2px;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        transition: background-size .3s;
+    }
+    /*Reduïm el tamany de la imatge del header*/
+    .headimage {
+        max-width: 100%;
+        min-width: 745px;
+        margin-top: -10px;
+        margin-left: -6px;
+    }
+    /*El text de color blanc es mante igual pero es fica una mica més adalt i es redueix el tamany*/
+    .inside {
+        color: white;
+        position: absolute;
+        top: 7%;
+        left: 7%;
+        font-size: 190%;
+        z-index: 0;
+    }
+    /*La lletra en Negreta encara es marca pero més petit*/
+    span {
+        font-weight: 800;
+        color: white;
+    }
+    /*El text es fica a sobre de la imatge del header*/
+    .inside1 {
+        color: white;
+        position: absolute;
+        top: 13%;
+        left: 7%;
+        padding-top: 1%;
+        font-size: 125%;
+    }
+    /*Ajustem la secció nosaltres*/
+    #nosa {
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 5%;
+    }
+    /*Ajustem la segona seccio de nosaltres*/
+    #nosa2 {
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 6%;
+    }
+    /*Imatge de la esquerra que estara en el mig amb un width bastant gran*/
+    .left {
+        width: 95%;
+        border-radius: 8px;
+        margin-bottom: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*El text que habia a la dreta de la imatge, doncs es justifica i es fica abaix*/
+    .lfloat {
+        margin-left: -1%;
+        margin-right: 4%;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    /*Imatge de la dreta que estara en el mig amb un width bastant gran*/
+    .right {
+        width: 95%;
+        border-radius: 8px;
+        margin-bottom: 3%;
+        margin-left: 4.9%;
+        margin-right: 4.9%;
+    }
+    /*El text que habia a la esquerra de la imatge, doncs es justifica i es fica abaix*/
+    .rfloat{
+        margin-left: -1%;
+        margin-right: 4%;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    /*Menu de la carta en grid*/
+    #contenidor {
+        gap: 30px;
+        margin-top: -3%;
+        margin-left: 8%;
+        width: 80%;
+    }
+    /*Ajustem la carta per el grid*/
+    .card {
+        font-size: 225%;
+        grid-column: 1/1;
+    }
+    /*Fiquem una capsa al menu en el grid*/
+    .boxmenu {
+        color: white;
+        line-height: 2.5em;
+        background-color: rgb(4, 4, 58);
+        font-size: 125%;
+        border-radius: 3px;
+        width: 100%;
+        height: 60px;
+        margin: 0%;
+        padding-top: 12px;
+    }
+    /*Estructura del grid amb les següents classes desde el ajusta fins a les imatges1 i 2*/
+    .ajusta {
+        border: rgb(162, 162, 233) 1px solid;
+        text-align: center;
+        font-weight: bold;
+        font-size: 125%;
+        line-height: 30em;
+        width: 101%;
+        height: 101%;
+        margin-top: -10%;
+    }
+    /*Ajustem el contingut tant en el costat del menu com el menu 1*/
+    .contingut {
+        margin-top: -6%;
+        margin-left: -2%;
+    }
+    /*El text sota del contingut*/
+    .ajustap {
+        margin-top: -4%;
+        margin-left: -5px;
+        margin-right: 1%;
+        line-height: 1.3;
+    }
+    /*Les imagesmenu i imagesmenu2 es fara com si fos una taula i li fiquem un flex*/
+    .imagesmenu{
+        display: table;
+        flex-wrap: wrap;
+    }
+    /*La primera imatge que li ficarem un width que ocupi tota la linea de la linea*/
+    .imgmenu1 {
+        width: 100%;
+    }
+    /*Li fiquem la segona imatge fent un grid*/
+    .imgmenu2 {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+    /*Fem un tamany per les 4 imatges del grid*/
+    .imgmenu1, .imgmenu2, .imgmenu3, .imgmenu4 {
+       margin:0;
+       padding:0;
+       margin-top: 35px;
+    }
+    /*Creem el div per generar el text dela taula següent*/
+    .imagesmenu .imgtext{
+       line-height: 45%;
+       display:table-caption;
+       margin:0;
+       padding:0;
+       color:white;
+       font-size: 125%;
+       text-align:center;
+       position:relative;
+       height:0;
+    }
+    /*Creem la taula que n'hi ha el text de color blanc amb el fons negre per saber el nom dela imatge*/
+    .imagesmenu .imgtext, .imagesmenu2 .imgtext {
+       background:rgba(0, 0, 0, 0.5);
+       display:block;
+       padding: 40px;
+       margin-top: -80px;
+    }
+    /*Estructura del grid amb les següents classes desde el contingut2 fins a les imatges3 i 4*/
+    .ajusta2 {
+        margin-top: -5px;
+        font-size: 125%;
+        line-height: 30em;
+        width: 101%;
+        height: 100.3%;
+    }
+    /*La segúent secció per fer grid*/
+    .contingut2 {
+        margin-top: -5%;
+        margin-left: -2%;
+    }
+    /*La primera imatge del segon grid en que li fiquem un width per a que ocupi tota la linea de la pagina*/
+    .imgmenu3{
+        width: 100%;
+    }
+    /*La segona imatge del segon grid en que li fiquem un grid + un width per ocupar tota la pagina*/
+    .imgmenu4{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+    /*El section id per fer la secció de la galeria*/
+    #gallery {
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 10%;
+    }
+    /*El div de galeria li fem de referencia com flex pero en aquest cas sería un grid per fer 2 columnes de la imatge*/
+    .galeria {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 5%;
+        width: 100%;
+    }
+    /*El div del flex de la sombra es fa un width al maxím*/
+    .galeria > .sombra {
+        width: 100%;
+    }
+    /*El div del flex de brillo es fa un width al maxím*/
+    .galeria > .brillo {
+        width: 100%;
+    }
+    /*Les icones del contacte*/
+    .imgfinal{
+        width: 22px;
+        height: 20px;
+        margin-top: 21px;
+        margin-left: 40px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    /*El text que n'hi ha del restaurant dels coberts*/
+    .restfoot {
+        margin-left: 80px;
+    }
+    /*FI DE LA ADAPTACIÓ DE LA TABLET*/
+}
